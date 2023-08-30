@@ -12,6 +12,9 @@ import Users from "./pages/users/Users";
 import Products from "./pages/products/Products";
 import Login from "./pages/login/Login";
 
+// import style
+import "./styles/global.scss";
+
 function App() {
   // layout (navbar / sidemenu / footer)
   const Layout = () => {
