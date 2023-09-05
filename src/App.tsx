@@ -10,7 +10,9 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Users from "./pages/users/Users";
 import Products from "./pages/products/Products";
+import Product from "./pages/product/Product";
 import Login from "./pages/login/Login";
+import User from "./pages/user/User";
 
 // import style
 import "./styles/global.scss";
@@ -49,8 +51,16 @@ function App() {
           element: <Users />,
         },
         {
+          path: "/users/:id",
+          element: <User />,
+        },
+        {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/products/:id",
+          element: <Product />,
         },
       ],
     },
